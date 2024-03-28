@@ -1,0 +1,36 @@
+<!-- 17.	Create a transformation program that includes four images.
+When the user mouse hover an image, the size of the image should increase by 20%. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Transformation</title>
+  <style>
+    .image-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.image-container img {
+  width: 200px; /* Set initial width */
+  height: auto; /* Maintain aspect ratio */
+  transition: transform 0.3s ease; /* Add smooth transition */
+}
+
+.image-container img:hover {
+  transform: scale(1.2); /* Increase size by 20% on hover */
+}
+
+    </style>
+</head>
+<body>
+  <div class="image-container">
+    <img src="image1.jpg" alt="Image 1">
+    <img src="image2.jpg" alt="Image 2">
+    <img src="image3.jpg" alt="Image 3">
+    <img src="image4.jpg" alt="Image 4">
+  </div>
+</body>
+</html>
