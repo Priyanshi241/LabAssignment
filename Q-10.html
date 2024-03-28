@@ -1,0 +1,97 @@
+<!-- 10.	Modify the webpage created in Exercise-3 using HTML form. 
+Use radio buttons for options, so user can choose only one among 4 options. 
+Also add a submit button for quiz submission. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz</title>
+<style>
+    /* Add your CSS styles here */
+    h1 {
+        color: blue;
+    }
+    .important {
+        font-weight: bold;
+        color: red;
+    }
+</style>
+</head>
+<body>
+
+<h1>Quiz</h1>
+
+<form action="#" method="post">
+    <ol>
+        <li>
+            What is the capital of France?
+            <br>
+            <input type="radio" id="q1a" name="q1" value="a">
+            <label for="q1a">a) Paris</label><br>
+            <input type="radio" id="q1b" name="q1" value="b">
+            <label for="q1b">b) Rome</label><br>
+            <input type="radio" id="q1c" name="q1" value="c">
+            <label for="q1c">c) Berlin</label><br>
+            <input type="radio" id="q1d" name="q1" value="d">
+            <label for="q1d">d) Madrid</label><br>
+        </li>
+        <li>
+            What is the chemical symbol for water?
+            <br>
+            <input type="radio" id="q2a" name="q2" value="a">
+            <label for="q2a">a) H2O</label><br>
+            <input type="radio" id="q2b" name="q2" value="b">
+            <label for="q2b">b) CO2</label><br>
+            <input type="radio" id="q2c" name="q2" value="c">
+            <label for="q2c">c) NaCl</label><br>
+            <input type="radio" id="q2d" name="q2" value="d">
+            <label for="q2d">d) O2</label><br>
+        </li>
+        <li>
+            Which planet is known as the Red Planet?
+            <br>
+            <input type="radio" id="q3a" name="q3" value="a">
+            <label for="q3a">a) Jupiter</label><br>
+            <input type="radio" id="q3b" name="q3" value="b">
+            <label for="q3b">b) Mars</label><br>
+            <input type="radio" id="q3c" name="q3" value="c">
+            <label for="q3c">c) Saturn</label><br>
+            <input type="radio" id="q3d" name="q3" value="d">
+            <label for="q3d">d) Venus</label><br>
+        </li>
+        <li>
+            What is the output of the following Python code?<br>
+            <pre><code>
+x = 5
+y = 2
+print(x**y)
+            </code></pre>
+            <input type="radio" id="q4a" name="q4" value="a">
+            <label for="q4a">a) 10</label><br>
+            <input type="radio" id="q4b" name="q4" value="b">
+            <label for="q4b">b) 25</label><br>
+            <input type="radio" id="q4c" name="q4" value="c">
+            <label for="q4c">c) 7</label><br>
+            <input type="radio" id="q4d" name="q4" value="d">
+            <label for="q4d">d) 32</label><br>
+        </li>
+        <li>
+            Write the chemical formula for Carbon Dioxide (CO<sub>2</sub>).
+            <br>
+            <input type="radio" id="q5a" name="q5" value="a">
+            <label for="q5a">a) CO</label><br>
+            <input type="radio" id="q5b" name="q5" value="b">
+            <label for="q5b">b) CO<sub>2</sub></label><br>
+            <input type="radio" id="q5c" name="q5" value="c">
+            <label for="q5c">c) CO<sup>2</sup></label><br>
+            <input type="radio" id="q5d" name="q5" value="d">
+            <label for="q5d">d) C<sub>2</sub>O</label><br>
+        </li>
+    </ol>
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

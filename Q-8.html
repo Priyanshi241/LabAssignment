@@ -1,0 +1,43 @@
+<!-- 
+8.	Create a web page having 9 images arranged in 3*3 matrixes. 
+When a user clicks on any image, it should open in a new tab. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Gallery</title>
+<style>
+    /* Centering the image grid */
+    .image-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin: 20px auto;
+        max-width: 600px;
+    }
+    /* Image styling */
+    .image-grid img {
+        width: 100%;
+        height: auto;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+
+<div class="image-grid">
+    <a href="img1.png" target="_blank"><img src="img1.png" alt="Image 1"></a>
+    <a href="img2.png" target="_blank"><img src="img2.png" alt="Image 2"></a>
+    <a href="img3.png" target="_blank"><img src="img3.png" alt="Image 3"></a>
+    <a href="img4.png" target="_blank"><img src="img4.png" alt="Image 4"></a>
+    <a href="img5.png" target="_blank"><img src="img5.png" alt="Image 5"></a>
+    <a href="img6.png" target="_blank"><img src="img6.png" alt="Image 6"></a>
+    <a href="img7.png" target="_blank"><img src="img7.png" alt="Image 7"></a>
+    <a href="img8.png" target="_blank"><img src="img8.png" alt="Image 8"></a>
+    <a href="img9.png" target="_blank"><img src="img9.png" alt="Image 9"></a>
+</div>
+
+</body>
+</html>

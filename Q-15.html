@@ -1,0 +1,68 @@
+<!-- 15.	Make a layout template that contains a header and two paragraphs. 
+Use float to line up the two paragraphs as columns side by side. 
+Give the header and two paragraphs a border and/or a background 
+color so you can see where they are. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Layout Template</title>
+<style>
+    /* Reset some default styles */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Header styles */
+    header {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        border-bottom: 2px solid #ddd;
+        text-align: center;
+    }
+
+    /* Main content styles */
+    .container {
+        width: 100%;
+        margin: 20px auto;
+        overflow: hidden; /* Clear float */
+    }
+
+    .column {
+        float: left;
+        width: 50%;
+        padding: 20px;
+        border: 2px solid #ddd;
+        background-color: #f9f9f9;
+    }
+
+    /* Clear fix for float */
+    .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Header</h1>
+</header>
+
+<div class="container clearfix">
+    <div class="column">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non diam sed ipsum accumsan luctus ut sit amet elit. Ut ut mi sed lacus iaculis malesuada.</p>
+    </div>
+    <div class="column">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non diam sed ipsum accumsan luctus ut sit amet elit. Ut ut mi sed lacus iaculis malesuada.</p>
+    </div>
+</div>
+
+</body>
+</html>

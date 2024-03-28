@@ -1,0 +1,78 @@
+<!-- 14.	Create a webpage that displays your favourite quotations in a web page just above images. You have to use border, height, width, margin, padding, outline properties of CSS. 
+Also use text and font properties to add effects in text to display quotations. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Favorite Quotations</title>
+<style>
+    /* Reset some default styles */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    /* Quotation container styles */
+    .quotations {
+        background-color: #f9f9f9;
+        border: 2px solid #ccc;
+        width: 80%;
+        margin: 20px auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* Quotation text styles */
+    .quotation-text {
+        font-style: italic;
+        font-size: 18px;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    /* Image container styles */
+    .image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Individual image styles */
+    .image-container img {
+        width: 200px;
+        height: auto;
+        margin: 10px;
+        border: 2px solid #ccc;
+        padding: 5px;
+        outline: 2px solid transparent;
+        transition: outline 0.3s ease;
+    }
+
+    /* Change outline color on image hover */
+    .image-container img:hover {
+        outline: 2px solid #ff6347; /* Change outline color to coral */
+    }
+</style>
+</head>
+<body>
+
+<div class="quotations">
+    <p class="quotation-text">"The only way to do great work is to love what you do." - Steve Jobs</p>
+    <p class="quotation-text">"Success is not final, failure is not fatal: It is the courage to continue that counts." - Winston Churchill</p>
+</div>
+
+<div class="image-container">
+    <img src="image1.jpg" alt="Image 1">
+    <img src="image2.jpg" alt="Image 2">
+    <img src="image3.jpg" alt="Image 3">
+</div>
+
+</body>
+</html>

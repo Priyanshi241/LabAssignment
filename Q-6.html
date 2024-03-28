@@ -1,0 +1,43 @@
+<!-- 6.	Create a webpage for a book chapter in which all the topic are displayed 
+using ordered list. When user clicks on any 
+topic it should be redirected to corresponding paragraph within same page. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Chapter</title>
+<style>
+    /* Style for the anchor links */
+    .topic-link {
+        text-decoration: none;
+        color: blue;
+    }
+
+    /* Style for the target paragraphs */
+    .paragraph {
+        margin-top: 20px;
+    }
+</style>
+</head>
+<body>
+
+<h1>Chapter 1: Introduction</h1>
+
+<ol>
+    <li><a class="topic-link" href="#topic1">Topic 1: Overview</a></li>
+    <li><a class="topic-link" href="#topic2">Topic 2: History</a></li>
+    <li><a class="topic-link" href="#topic3">Topic 3: Importance</a></li>
+</ol>
+
+<h2 id="topic1">Topic 1: Overview</h2>
+<p class="paragraph">This is the overview of the chapter.</p>
+
+<h2 id="topic2">Topic 2: History</h2>
+<p class="paragraph">This is the history of the subject.</p>
+
+<h2 id="topic3">Topic 3: Importance</h2>
+<p class="paragraph">This is the importance of the topic.</p>
+
+</body>
+</html>
